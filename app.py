@@ -18,6 +18,10 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 def page():
     return render_template('index.html')
  
+@app.route('/quiz')
+
+def quiz():
+    return render_template('quiz.html')
 # main driver function
 if __name__ == '__main__':
  
